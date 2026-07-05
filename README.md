@@ -1,4 +1,4 @@
-# 💼 Khansa Tanveer - Frontend Developer Portfolio
+# Frontend Developer Portfolio
 
 A modern, responsive, and interactive portfolio website showcasing my projects, skills, learning journey, and experience as a Frontend Developer. Built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.
 
