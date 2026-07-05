@@ -87,27 +87,6 @@ export default function Hero() {
         animate="visible"
         className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
       >
-        {/* Status badge */}
-        <motion.div
-          variants={itemVariants}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8"
-        >
-          {/* <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-          <span className="text-sm text-gray-300">Available for freelance work</span> */}
-        </motion.div>
-
-        {/* Profile image with glow */}
-        {/* <motion.div
-          variants={itemVariants}
-          className="relative inline-block mb-8"
-        > */}
-          {/* <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary-500/50 animate-glow">
-            <div className="w-full h-full bg-gradient-to-br from-primary-500 via-accent-cyan to-accent-pink flex items-center justify-center text-4xl md:text-5xl font-bold text-white">
-              K
-            </div>
-          </div>
-          <div className="absolute -inset-2 bg-gradient-to-r from-primary-500 via-accent-cyan to-accent-pink rounded-full opacity-20 blur-xl animate-pulse-slow" /> */}
-        {/* </motion.div> */}
 
         {/* Name */}
         <motion.h1
