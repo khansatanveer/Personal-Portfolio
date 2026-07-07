@@ -251,23 +251,8 @@ export default function Projects() {
             ))}
           </div>
 
-          {/* View more button */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.8 }}
-            className="text-center mt-12"
-          >
-            <a
-              href="https://github.com/khansatanveer"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-secondary inline-flex items-center gap-2 group"
-            >
-              <LinkIcon className="w-5 h-5" />
-              View More on GitHub
-            </a>
-          </motion.div>
+        
+     
         </motion.div>
       </div>
     </section>
