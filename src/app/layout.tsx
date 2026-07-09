@@ -87,13 +87,14 @@ export const metadata: Metadata = {
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
   },
+  verification: {
+  google: "0nkUUMVM8MCzJdJGwDkqEalxPq_PRRvVO-u045WJg0Y",
+}
 };
 export const viewport: Viewport = {
   themeColor: "#0f172a",
 };
-verification: {
-  google: "0nkUUMVM8MCzJdJGwDkqEalxPq_PRRvVO-u045WJg0Y",
-},
+
 
 export default function RootLayout({
   children,
