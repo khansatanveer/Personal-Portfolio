@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport  } from "next";
 import { Inter, Fira_Code } from "next/font/google";
 import "./globals.css";
 
@@ -14,25 +14,31 @@ const firaCode = Fira_Code({
   display: "swap",
 });
 
+
 export const metadata: Metadata = {
   title: {
-    default: "Khansa | Fullstack Web Developer",
+    default: "Khansa | Frontend Developer",
     template: "%s | Khansa",
   },
+  applicationName: "Khansa Portfolio",
   description:
-    "Fullstack Web Developer based in Karachi, Pakistan. Specializing in React, Next.js, Node.js, and scalable web applications.",
-  keywords: [
-    "Fullstack Developer",
-    "Web Developer",
-    "React Developer",
-    "Next.js Developer",
-    "Node.js Developer",
-    "Karachi",
-    "Pakistan",
-    "Frontend Developer",
-    "Backend Developer",
+    "Frontend Developer based in Karachi, Pakistan. I build responsive, modern, and user-friendly web applications using Next.js,  TypeScript, JavaScript, HTML, CSS, and Tailwind CSS.",
+  category: "technology",
+    keywords: [
+  "Frontend Developer",
+  "Web Developer",
+  "Next.js",
+  "React",
+  "JavaScript",
+  "TypeScript",
+  "HTML",
+  "CSS",
+  "Tailwind CSS",
+  "Portfolio",
+  "Karachi",
+  "Pakistan",
   ],
-  authors: [{ name: "Khansa", url: "https://khansa.dev" }],
+  authors: [{ name: "Khansa", url: "https://personal-portfolio-one-lemon.vercel.app" }],
   creator: "Khansa",
   publisher: "Khansa",
   formatDetection: {
@@ -40,29 +46,29 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://khansa.dev"),
+  metadataBase: new URL("https://personal-portfolio-one-lemon.vercel.app"),
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://khansa.dev",
-    title: "Khansa | Fullstack Web Developer",
+    url: "https://personal-portfolio-one-lemon.vercel.app",
+    title: "Khansa | Frontend Developer",
     description:
-      "Fullstack Web Developer based in Karachi, Pakistan. Specializing in React, Next.js, Node.js, and scalable web applications.",
-    siteName: "Khansa Portfolio",
+      "Frontend Developer based in Karachi, Pakistan. I build responsive, modern, and user-friendly web applications using Next.js, TypeScript, JavaScript, HTML, CSS, and Tailwind CSS.",
+    siteName: "Portfolio",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Khansa - Fullstack Web Developer",
+        alt: "Khansa - Frontend Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Khansa | Fullstack Web Developer",
+    title: "Khansa | Frontend Developer",
     description:
-      "Fullstack Web Developer based in Karachi, Pakistan.",
+      "Frontend Developer based in Karachi, Pakistan.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -81,8 +87,11 @@ export const metadata: Metadata = {
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
   },
-  manifest: "/site.webmanifest",
 };
+export const viewport: Viewport = {
+  themeColor: "#0f172a",
+};
+<meta name="google-site-verification" content="0nkUUMVM8MCzJdJGwDkqEalxPq_PRRvVO-u045WJg0Y" />
 
 export default function RootLayout({
   children,

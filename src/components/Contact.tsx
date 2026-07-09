@@ -141,7 +141,7 @@ const socialLinks = [
 ];
 
   return (
-    <section id="contact" className="relative py-20 md:py-32 overflow-hidden">
+    <section id="contact" className="relative py-20 md:py-32 overflow-hidden ">
       <div className="section-gradient-bg" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -156,16 +156,16 @@ const socialLinks = [
             <span className="inline-block px-4 py-1.5 rounded-full glass text-sm font-mono text-primary-400 mb-4">
               Get In Touch
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <h2 className=" text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               Contact<span className="gradient-text"> Me</span>
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-primary-500 to-accent-cyan mx-auto rounded-full" />
-            <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
+            <p className="text-gray-400 text-sm sm:text-base mt-6 max-w-2xl mx-auto px-2">
               Whether you have a project, internship, freelance opportunity, or collaboration in mind, I&apos;d love to hear from you. Let&apos;s connect and build something great together.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-5 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 ">
             {/* Contact info - Left side */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -175,22 +175,22 @@ const socialLinks = [
             >
               {/* Contact details */}
               <div className="space-y-4">
-                {contactInfo.map((info, index) => (
+                {contactInfo.map((info) => (
                   <a
                     key={info.label}
                     href={info.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-4 p-4 rounded-xl glass hover:bg-white/10 transition-all duration-300 group"
+                    className="flex items-center gap-3 p-3 sm:gap-4 sm:p-4 rounded-xl glass hover:bg-white/10 transition-all duration-300 group"
                   >
-                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary-500 to-accent-cyan flex items-center justify-center flex-shrink-0">
-                      <info.icon className="w-5 h-5 text-white" />
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gradient-to-br from-primary-500 to-accent-cyan flex items-center justify-center flex-shrink-0">
+                      <info.icon className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">{info.label}</p>
-                      <p className="font-medium text-gray-200 group-hover:text-primary-400 transition-colors">
-                        {info.value}
-                      </p>
+                     <p className="font-medium text-gray-200 break-all text-sm sm:text-base">
+  {info.value}
+</p>
                     </div>
                   </a>
                 ))}
@@ -216,12 +216,12 @@ const socialLinks = [
               </div>
 
               {/* Availability badge */}
-              <div className="p-4 rounded-xl bg-gradient-to-r from-primary-500/10 to-accent-cyan/10 border border-primary-500/20">
+              <div className="p-4 rounded-xl  bg-gradient-to-r from-primary-500/10 to-accent-cyan/10 border border-primary-500/20">
                 <div className="flex items-center gap-3">
                   <span className="w-3 h-3 bg-green-400 rounded-full animate-pulse" />
                   <div>
                     <p className="font-medium text-white">Currently Available</p>
-                    <p className="text-sm text-gray-400">
+                    <p className="text-sm  text-gray-400 ">
                       Open to Internships, Freelance Projects, and New Opportunities.
                     </p>
                   </div>
@@ -284,7 +284,7 @@ const socialLinks = [
                           ? "border-red-500"
                           : "border-white/10 focus:border-primary-500"
                       } text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-500/20 transition-all duration-200`}
-                      aria-invalid={!!errors.name}
+                      aria-invalid={errors.name ? "true" : "false"}
                       aria-describedby={errors.name ? "name-error" : undefined}
                     />
                     {errors.name && (

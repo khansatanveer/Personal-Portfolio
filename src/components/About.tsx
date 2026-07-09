@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MapPin, Code, Coffee } from "lucide-react";
+import {  Code, Coffee } from "lucide-react";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
@@ -36,48 +36,15 @@ export default function About() {
             <div className="w-20 h-1 bg-gradient-to-r from-primary-500 to-accent-cyan mx-auto rounded-full" />
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left - Image/Visual */}
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={isInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.7, delay: 0.2 }}
-              className="relative"
-            >
-              <div className="relative aspect-square max-w-md mx-auto">
-                {/* Decorative background */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 to-accent-pink/20 rounded-3xl blur-2xl" />
-
-                {/* Main card */}
-                <div className="relative glass rounded-3xl p-8 h-full flex flex-col items-center justify-center">
-                  {/* Code icon in center */}
-                  <div className="w-32 h-32 rounded-2xl bg-gradient-to-br from-primary-500 to-accent-cyan flex items-center justify-center mb-6 shadow-neon-purple">
-                    <Code className="w-16 h-16 text-white" />
-                  </div>
-                  {/* Location badge */}
-                  <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10">
-                    <MapPin className="w-4 h-4 text-accent-cyan" />
-                    <span className="text-sm text-gray-300">Karachi, Pakistan</span>
-                  </div>
-
-                  {/* Floating elements */}
-                  <motion.div
-                    animate={{ y: [0, -10, 0] }}
-                    transition={{ duration: 3, repeat: Infinity }}
-                    className="absolute -top-4 -right-4 w-16 h-16 rounded-xl bg-gradient-to-br from-primary-500 to-accent-pink flex items-center justify-center shadow-neon-pink"
-                  >
-                    <span className="text-2xl font-bold text-white">K</span>
-                  </motion.div>
-                </div>
-              </div>
-            </motion.div>
+          <div className="flex justify-center items-center">
+           
 
             {/* Right - Content */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.3 }}
-              className="space-y-6"
+              className="space-y-6 text-center max-w-3xl"
             >
               <h3 className="text-2xl md:text-3xl font-semibold">
                 A passionate developer crafting{" "}
@@ -110,7 +77,7 @@ export default function About() {
               </p>
 
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-4 pt-6">
+              <div className="grid grid-cols-2 gap-4">
                 {stats.map((stat, index) => (
                   <motion.div
                     key={stat.label}

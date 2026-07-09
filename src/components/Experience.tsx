@@ -63,16 +63,12 @@ function ExperienceCard({
     >
       {/* Timeline dot */}
       <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 flex flex-col items-center">
-        <motion.div
-          initial={{ scale: 0 }}
-          animate={isInView ? { scale: 1 } : {}}
-          transition={{ delay: index * 0.15 + 0.3, type: "spring" }}
-          className={`w-4 h-4 rounded-full border-4 ${
-            experience.current
-              ? "border-accent-cyan bg-dark shadow-neon-cyan"
-              : "border-primary-500 bg-dark"
-          }`}
-        />
+      <motion.div
+  initial={{ scale: 0 }}
+  animate={isInView ? { scale: 1 } : {}}
+  transition={{ delay: index * 0.15 + 0.3, type: "spring" }}
+  className="w-4 h-4 rounded-full border-4 border-accent-cyan bg-dark shadow-neon-cyan"
+/>
         {index < experiences.length - 1 && (
           <div className="w-0.5 h-full bg-gradient-to-b from-primary-500 to-transparent" />
         )}
@@ -134,7 +130,7 @@ export default function Experience() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="experience" className="relative py-20 md:py-32 overflow-hidden">
+    <section id="experience" className="relative py-20 md:py-32 overflow-hidden ">
       <div className="section-gradient-bg" />
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
