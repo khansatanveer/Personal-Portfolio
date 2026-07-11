@@ -58,13 +58,13 @@ export const projects: Project[] = [
   },
   {
     id: 5,
-    title: "Beauty Website",
-    tech: ["Next.js", "TypeScript", "CSS"],
+    title: "Physical AI Humanoid Robotics Book",
     description:
-      "A modern and responsive beauty website featuring a clean layout and elegant user interface.",
-    image: "/project-5.png",
-    liveUrl: "https://beauty-website-in-css.vercel.app",
-    githubUrl: "https://github.com/khansatanveer/beauty-website-in-css.git",
+      "A modern documentation platform built with Docusaurus and Tailwind CSS, featuring a responsive layout, intuitive navigation, and an integrated AI chatbot to help users explore Physical AI and Humanoid Robotics content through an interactive experience.",
+    image: "/project-1.png",
+    tech: ["Docusaurus", "Tailwind CSS", "Spec-Driven Development"," RAG Chatbot"],
+    liveUrl: "https://physical-ai-humanoid-robotics-book-orpin-sigma.vercel.app",
+    githubUrl: "https://github.com/khansatanveer/Physical-AI-Humanoid-Robotics-Book.git",
     featured: true,
   },
   {
@@ -99,5 +99,16 @@ export const projects: Project[] = [
   liveUrl: "https://blog-website-nine-jet.vercel.app",
   githubUrl: "https://github.com/khansatanveer/Blog-Website.git",
   featured: true,
-}
+},
+{
+    id: 9,
+    title: "Calculator",
+    tech: ["Html", "CSS" , "JavaScript"],
+    description:
+      "A modern and responsive calculator featuring basic arithmetic operations, keyboard support, AC and DEL functionality, and real-time calculations using JavaScript. ",
+    image: "/project-9.png",
+    liveUrl: "https://code-alpha-calculator-xi-six.vercel.app/",
+    githubUrl: "https://github.com/khansatanveer/CodeAlpha_Calculator.git",
+    featured: true,
+  },
 ];
