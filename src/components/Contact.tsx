@@ -163,13 +163,7 @@ const socialLinks = [
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
         >
-          <div className="space-y-4"> {contactInfo.map((info) => ( <a key={info.label} href={info.href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 rounded-xl glass hover:bg-white/10 transition-all duration-300 group" > 
-          <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary-500 to-accent-cyan flex items-center justify-center flex-shrink-0"> 
-            <info.icon className="w-5 h-5 text-white" /> </div>
-            <div> <p className="text-sm text-gray-500">{info.label}</p> <p className="font-medium text-gray-200 group-hover:text-primary-400 transition-colors"> {info.value} </p> 
-          </div> 
-          </a> ))} 
-          </div>
+  
           {/* Section header */}
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-1.5 rounded-full glass text-sm font-mono text-primary-400 mb-4">
