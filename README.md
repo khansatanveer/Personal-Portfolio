@@ -59,19 +59,8 @@ A modern, responsive, and interactive portfolio website showcasing my projects, 
 - 📚 Blog Website
 - ✔ To-Do App
 
-
 ---
 
-## 📁 Folder Structure
-
-```
-src/
- ├── app/
- ├── components/
- ├── data/
- ├── styles/
- └── public/
-```
 
 ---
 
@@ -84,7 +73,6 @@ Build the project
 ```bash
 npm run build
 ```
-
 ---
 
 ---
